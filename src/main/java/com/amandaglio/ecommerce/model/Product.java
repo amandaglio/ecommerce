@@ -2,8 +2,7 @@ package com.amandaglio.ecommerce.model;
 
 import jakarta.persistence.*;
 
-@Entity
-@Table(name = "products")
+@Entity(name = "products")
 public class Product {
 
     @Id
@@ -13,7 +12,7 @@ public class Product {
     private Double price;
     private String pictureUrl;
 
-    public Product() {
+    private Product() {
     }
 
     public Product(Long id, String name, Double price, String pictureUrl) {
